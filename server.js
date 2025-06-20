@@ -18,7 +18,7 @@ const app = express();
 
 // ✅ Use CORS with credentials support
 app.use(cors({
-  origin: 'http://localhost:5173', // Frontend URL (or use process.env.CLIENT_URL)
+  origin: ['http://localhost:5173', 'http://stayfinder-frontend-one.vercel.app'], // Frontend URL (or use process.env.CLIENT_URL)
   credentials: true
 }));
 
