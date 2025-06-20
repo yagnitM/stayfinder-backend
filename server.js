@@ -22,6 +22,11 @@ app.use(cors({
   credentials: true
 }));
 
+app.get('/', (req, res) => {
+  res.send('StayFinder Backend is running!');
+});
+
+
 app.use(express.json());
 
 // ✅ Sessions must be set up before passport
